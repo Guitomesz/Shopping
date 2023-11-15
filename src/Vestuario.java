@@ -1,12 +1,10 @@
-//loja que vende produto de beleza/cosmeticos
-
 public class Vestuario extends Loja {
     protected boolean produtosImportados;
 
     Vestuario(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,
-              Endereco endereco, Data data, boolean produtosImportados) {
+              Endereco endereco, Data data, boolean produtosImportados, int estoqueProdutos) {
 
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, estoqueProdutos);
         this.produtosImportados = produtosImportados;
     }
 
@@ -71,12 +69,8 @@ public class Vestuario extends Loja {
 
     @Override
     public String toString() {
-        return "Loja: " + this.nome
-                + " | QuantidadeFuncionarios: " + this.quantidadeFuncionarios
-                + " | SalarioBaseFuncionarios: " + this.salarioBaseFuncionario
-                + " | Gastos da loja com salários: " + this.gastosComSalario()
-                + " | Tamanho da loja: " + this.tamanhoDaLoja()
-                + " | Possui produtos importados? " + this.produtosImportados
+        return super.toString() +
+                " | Possui produtos importados? " + this.produtosImportados
                 + " | ";
     }
 }

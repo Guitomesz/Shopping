@@ -1,12 +1,10 @@
-//loja que vende produto de beleza/cosmeticos
-
 public class Bijuteria extends Loja {
     protected double metaVendas;
 
     Bijuteria(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,
-              Endereco endereco, Data data, double metaVendas) {
+              Endereco endereco, Data data, double metaVendas, int estoqueProdutos) {
 
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, estoqueProdutos);
         this.metaVendas = metaVendas;
     }
 

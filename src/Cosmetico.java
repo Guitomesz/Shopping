@@ -1,12 +1,10 @@
-//loja que vende produto de beleza/cosmeticos
-
 public class Cosmetico extends Loja {
     protected double taxaComercializacao;
 
     Cosmetico(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,
-              Endereco endereco, Data data, double taxaComercializacao) {
+              Endereco endereco, Data data, double taxaComercializacao, int estoqueProdutos) {
 
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, estoqueProdutos);
         this.taxaComercializacao = taxaComercializacao;
     }
 

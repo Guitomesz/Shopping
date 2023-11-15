@@ -1,12 +1,10 @@
-//loja que vende produto de beleza/cosmeticos
-
 public class Alimentacao extends Loja {
     protected Data dataAlvara;
 
     Alimentacao(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,
-                Endereco endereco, Data data, Data dataAlvara) {
+                Endereco endereco, Data data, Data dataAlvara, int estoqueProdutos) {
 
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, estoqueProdutos);
         this.dataAlvara = dataAlvara;
     }
 

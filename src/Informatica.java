@@ -1,12 +1,10 @@
-//loja que vende produto de beleza/cosmeticos
-
 public class Informatica extends Loja {
     protected double seguroEletronicos;
 
     Informatica(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,
-                Endereco endereco, Data data, double seguroEletronicos) {
+                Endereco endereco, Data data, double seguroEletronicos, int estoqueProdutos) {
 
-        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data);
+        super(nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, data, estoqueProdutos);
         this.seguroEletronicos = seguroEletronicos;
     }
 
@@ -67,7 +65,9 @@ public class Informatica extends Loja {
 
     public void setSeguroEletronicos(double seguroEletronicos) {
         this.seguroEletronicos = seguroEletronicos;
+
     }
+
 
     public String toString() {
         return super.toString() +
